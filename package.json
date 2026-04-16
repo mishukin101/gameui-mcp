@@ -1,0 +1,35 @@
+{
+  "name": "gameui-mcp",
+  "version": "1.0.0",
+  "description": "Game UI design knowledge base — MCP server + CLI for LLM-assisted game UI generation",
+  "type": "module",
+  "bin": {
+    "gameui-mcp": "./dist/cli.js"
+  },
+  "scripts": {
+    "build": "tsc",
+    "dev:server": "tsx src/server.ts",
+    "dev:cli": "tsx src/cli.ts",
+    "start": "node dist/server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mishukin101/gameui-mcp.git"
+  },
+  "keywords": ["mcp", "game-ui", "design-knowledge", "mmorpg"],
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/mishukin101/gameui-mcp/issues"
+  },
+  "homepage": "https://github.com/mishukin101/gameui-mcp#readme",
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.29.0",
+    "zod": "^4.3.6"
+  },
+  "devDependencies": {
+    "@types/node": "^25.6.0",
+    "tsx": "^4.21.0",
+    "typescript": "^6.0.2"
+  }
+}
