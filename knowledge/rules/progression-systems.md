@@ -29,3 +29,30 @@ Related screen types: skill_tree, equipment_enhance, crafting, character
 **Confidence**: observed-convention
 **Screen types**: equipment_enhance, crafting
 **Sources**: LOY profile finite_attempt (2/7)
+
+## Rule: Level-Up Feedback Ceremony
+
+**Condition**: IF player levels up (character, skill, equipment)
+**Decision**: THEN display brief fullscreen or banner ceremony: level number flash + particle burst + stat change preview. Duration 1-2s. Tap to dismiss or auto-dismiss.
+**Rationale**: 레벨업은 핵심 성장 마일스톤. 무반응 레벨업은 성취감 상실.
+**Confidence**: observed-convention
+**Screen types**: hud, results_screen, character
+**Sources**: 모바일 MMORPG 공통 관행
+
+## Rule: XP Bar Placement
+
+**Condition**: IF displaying experience progress
+**Decision**: THEN anchor XP bar persistently at screen bottom (full width, thin ~4-8dp) OR near character portrait. Show current/next level numeric threshold on hover/tap.
+**Rationale**: XP 진행도는 세션 내 지속 확인 필요. 바닥 전폭 또는 초상화 인접 배치가 표준.
+**Confidence**: observed-convention
+**Screen types**: hud, character
+**Sources**: 모바일 MMORPG HUD 공통 관찰
+
+## Rule: Combat Power as Primary Progression Metric
+
+**Condition**: IF game has multiple power-contributing systems (level, gear, skills, gems)
+**Decision**: THEN compute and display single aggregated "Combat Power" or "Growth Score" number prominently on character screen. Provide breakdown tooltip showing contribution from each subsystem.
+**Rationale**: LOY "108,776 전투력" 관찰. 복잡한 성장 시스템을 단일 지표로 요약해야 플레이어가 진행도 파악 가능.
+**Confidence**: observed-convention
+**Screen types**: character, hud
+**Sources**: LOY loy-inventory-001, 모바일 MMORPG 공통 관행

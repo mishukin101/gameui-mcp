@@ -20,3 +20,30 @@ Related screen types: clan, chat, trade
 **Confidence**: observed-convention
 **Screen types**: clan
 **Sources**: nc-clan-001, RV clan references (7 files)
+
+## Rule: Persistent Chat Window
+
+**Condition**: IF chat system exists in MMORPG
+**Decision**: THEN use semi-transparent collapsible chat window anchored to bottom-left or bottom-right. Default collapsed state, expand on tap. Support tab switching between channels (전체/길드/파티/귓속말).
+**Rationale**: 채팅이 항상 열려 있으면 게임 뷰포트 차단. 접힌 상태에서도 최근 메시지 미리보기 제공이 관행.
+**Confidence**: observed-convention
+**Screen types**: chat, hud
+**Sources**: 6개 게임 공통 관찰
+
+## Rule: Block/Report Safety Access
+
+**Condition**: IF player interacts with another player (chat, trade, guild, PvP)
+**Decision**: THEN provide block/report action accessible within 2 taps from player name or portrait. Block is immediate (no confirmation); report opens form with category selection.
+**Rationale**: 성인 콘텐츠나 스팸 즉시 차단 필요. 한국 게임법 청소년 보호 요구. Block 확인 다이얼로그는 피해자 지연 유발.
+**Confidence**: regulatory-requirement
+**Screen types**: chat, clan, trade
+**Sources**: 한국 게임산업진흥법 청소년 보호, 모바일 MMORPG 공통 관행
+
+## Rule: Party Frame Real-Time Update
+
+**Condition**: IF player is in a party/raid group
+**Decision**: THEN display party member HP/MP bars in top-left or left-side stack, updated in real time. Each member shows: name, class icon, HP bar, MP bar, status effects.
+**Rationale**: 실시간 전투에서 파티원 상태 확인은 핵심. 좌측은 전통적 MMORPG 관습.
+**Confidence**: observed-convention
+**Screen types**: hud
+**Sources**: 모바일 MMORPG 파티 플레이 공통 관찰

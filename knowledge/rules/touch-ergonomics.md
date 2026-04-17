@@ -8,7 +8,7 @@ Related screen types: hud, inventory, forge, shop, skill_tree, character, chat, 
 **Condition**: IF mobile touch target
 **Decision**: THEN minimum 44×44dp (iOS) / 48×48dp (Android). Combat-critical buttons (skills, auto-battle) use 56-64dp.
 **Rationale**: Apple HIG / Google Material 가이드라인 기본값. 한국 MMORPG는 전투 버튼을 더 크게 만들어 빠른 반응을 지원.
-**Confidence**: regulatory-requirement (platform guidelines) + observed-convention (MMORPG upsizing)
+**Confidence**: platform-guideline + observed-convention
 **Screen types**: hud, inventory, forge, shop, skill_tree, character
 **Sources**: Apple HIG, Google Material Design, Lineage W / Night Crows / Raven 2 프로필 분석
 

@@ -8,7 +8,7 @@ Related screen types: hud, inventory, collection, settings, all
 **Condition**: IF the device has a notch or Dynamic Island (top safe-area-inset >= 44pt)
 **Decision**: THEN reserve at minimum 62pt from the top edge and 34pt from the bottom edge for UI-free space. Use `env(safe-area-inset-*)` or platform equivalents at runtime.
 **Rationale**: iPhone 16/17 models report top insets of 59-68pt. Android punch-holes vary 30-48pt. 노치 근처 탭은 오작동 유발.
-**Confidence**: regulatory-requirement
+**Confidence**: platform-guideline
 **Screen types**: hud, inventory, collection, settings
 **Sources**: Apple HIG Layout, iOS Safe Area Guide
 

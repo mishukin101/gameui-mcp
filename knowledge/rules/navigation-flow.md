@@ -102,27 +102,6 @@ Related screen types: hud, inventory, forge, shop, gacha, skill_tree, character,
 **Screen types**: inventory, shop, character, clan
 **Sources**: 6개 게임 전체 — 3단계 중첩 사례 0건
 
-## State Machine: Forge/Enhancement
+## State Machines
 
-**Screen type**: forge
-**Flow**: Select Item → View Stats/Probability → Select Materials → Confirm Cost → Execute Animation → Result (Success/Fail) → Loop or Exit
-**Error states**: insufficient materials, insufficient currency, item locked, max level reached
-**Notes**: Legend of Ymir adds "Auto Appraisal" with condition-setting for automated loops.
-
-## State Machine: Inventory
-
-**Screen type**: inventory
-**Flow**: Browse Grid → Select Item → Action Menu Popup → Sub-action (equip/enhance/sell/details) → Confirm if destructive → Feedback
-**Error states**: full inventory, level-locked item, bound item (cannot trade/sell)
-
-## State Machine: Shop/Purchase
-
-**Screen type**: shop
-**Flow**: Browse Categories (sidebar) → Select Product → View Details + Price → Purchase Confirm (modal) → Result → Return
-**Notes**: Max 2 taps to completion after reaching shop.
-
-## State Machine: Gacha/Summon
-
-**Screen type**: gacha
-**Flow**: Hub Selection (type cards) → Banner Selection → Pull Type (1x/10x) → Confirm Cost → Pull Animation (color signals rarity) → Result Reveal (ceremony) → Collect
-**Notes**: Rarity escalation animation — common = subtle, legendary = dramatic full-screen.
+화면 유형별 상태 머신은 별도 파일 참조: `knowledge/state-machines.md`

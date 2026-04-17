@@ -17,7 +17,7 @@ Related screen types: inventory, collection, shop, crafting
 **Condition**: IF rendering grid slots that player must tap to select
 **Decision**: THEN enforce minimum 44×44pt (132×132px @3x). For item grids with detailed icons (rarity borders, stack counts, lock badges), target 52-60pt per slot.
 **Rationale**: Apple HIG 44pt 최소 기준. 한국 MMORPG 아이템은 등급 테두리, 강화 수치, 수량 뱃지, 잠금 아이콘 등 밀도 높은 시각 정보 포함.
-**Confidence**: regulatory-requirement
+**Confidence**: platform-guideline + observed-convention
 **Screen types**: inventory, collection, shop, crafting
 **Sources**: Apple HIG Layout, LW lw-collection-001, NC nc-collection-001
 

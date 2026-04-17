@@ -39,11 +39,11 @@ Related screen types: inventory, equipment_enhance, collection, forge, shop, hud
 **Screen types**: inventory
 **Sources**: LW lw-inventory-001, LOY loy-inventory-001
 
-## Rule: Probability Display Adjacent to Action
+## Rule: Probability Placement Adjacent to Action
 
 **Condition**: IF action has variable outcomes with known rates (forge, gacha)
-**Decision**: THEN display grade-level probabilities with color-coded tiers (gold=top, grey=lowest) adjacent to the action button, before the player commits.
-**Rationale**: LOY 대장간 "상급 6%, 중급 24%, 기본 70%" 색상 구분 표시. 한국 게임법 확률 공개 의무 충족.
-**Confidence**: regulatory-requirement
+**Decision**: THEN place probability values adjacent to (not separate from) the action button. Grade-level probabilities use color-coded tiers (gold=top, grey=lowest).
+**Rationale**: 확률을 버튼에서 떨어뜨리면 플레이어가 비용 대비 성공률을 놓침. LOY 대장간 "상급 6%, 중급 24%, 기본 70%" 색상 구분 표시. (확률 공개 자체의 법적 의무는 confirmation-safeguards의 Enhancement Probability Display 참조)
+**Confidence**: observed-convention
 **Screen types**: forge, gacha, equipment_enhance
-**Sources**: LOY loy-forge-003, 한국 게임산업진흥법
+**Sources**: LOY loy-forge-003

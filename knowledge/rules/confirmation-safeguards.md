@@ -15,7 +15,7 @@ Related screen types: shop, forge, trade, gacha, inventory, character
 ## Rule: Enhancement Probability Display
 
 **Condition**: IF enhancement, upgrade, or any probability-based action
-**Decision**: THEN display success probability to 2 decimal places. Show destruction/downgrade probability if applicable. Show cost (materials + currency) before allowing confirmation. Show before/after stat comparison.
+**Decision**: THEN display exact success probability (typically 1 decimal place, e.g., "32.5%"). Show destruction/downgrade probability if applicable. Show cost (materials + currency) before allowing confirmation. Show before/after stat comparison.
 **Rationale**: 한국 법률상 확률 공개 의무. MapleStory Star Force 패턴이 업계 표준.
 **Confidence**: regulatory-requirement
 **Screen types**: forge, crafting
