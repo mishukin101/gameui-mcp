@@ -29,3 +29,21 @@ Related screen types: hud, shop, inventory, trade, quest_journal
 **Confidence**: observed-convention
 **Screen types**: inventory, trade, equipment_enhance
 **Sources**: rv-trade-001, NC inventory references
+
+## Rule: Premium vs Free Currency Icon Shape
+
+**Condition**: IF game has both free and premium currencies
+**Decision**: THEN represent premium currency as faceted gem/diamond icon, free currency as gold coin icon. Visual distinction must be immediate (no reading required).
+**Rationale**: 4개 게임 동일 관습. NC 다이아(프리미엄) vs 골드(무료), LW 다이아 vs 아데나 코인. 아이콘 모양만으로 유료/무료 구분 필요 — 오결제 방지.
+**Confidence**: observed-convention
+**Screen types**: hud, shop, gacha, inventory
+**Sources**: NC currency_types, LW currency_types, RV currency_types
+
+## Rule: Status Effect Icon Row
+
+**Condition**: IF player/target has active buff/debuff/status effects
+**Decision**: THEN display status effect icons in a horizontal row near the portrait or HP bar. Each icon shows duration (numeric countdown or radial depletion). Buffs typically use blue/green border, debuffs use red/purple.
+**Rationale**: 상태 이상 파악은 전투 판단에 필수. 아이콘만 보여주면 효과를 모르므로 롱프레스로 툴팁 제공 필요.
+**Confidence**: observed-convention
+**Screen types**: hud, character
+**Sources**: WoW/FFXIV status effect row convention, 모바일 MMORPG HUD 관찰

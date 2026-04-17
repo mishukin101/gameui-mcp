@@ -62,7 +62,7 @@ Related screen types: shop, forge, trade, gacha, inventory, character
 **Condition**: IF enhancement/upgrade has item destruction risk
 **Decision**: THEN show destruction warning in red/orange text near the action button. Offer "destruction prevention" option if available (typically at 2-3x cost). Show the exact destruction probability alongside success probability.
 **Rationale**: 아이템 파괴는 플레이어에게 가장 큰 감정적 손실. 명확한 경고 없이 파괴되면 이탈.
-**Confidence**: observed-convention + regulatory-requirement (probability part)
+**Confidence**: regulatory-requirement + observed-convention
 **Screen types**: forge
 **Sources**: forge.md (MapleStory: destruction prevention at 3x cost), Legend of Ymir forge 분석
 

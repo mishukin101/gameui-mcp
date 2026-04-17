@@ -37,7 +37,7 @@ Related screen types: hud, inventory, forge, shop, skill_tree, character, chat, 
 **Rationale**: 엄지가 화면의 약 33%를 가리므로, 중요 피드백이 가려지면 안 됨.
 **Confidence**: academic-evidence
 **Screen types**: hud
-**Sources**: platform-adaptation.md ("thumb covers 33%"), gameplay-hud.md ("80% gaze on game world")
+**Sources**: Steven Hoober "Designing Mobile Interfaces" (thumb reach research), Celia Hodent "The Gamer's Brain" (gaze attention in games)
 
 ## Rule: Tap to Select, Long-Press for Detail
 

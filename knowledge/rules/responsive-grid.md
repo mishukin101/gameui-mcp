@@ -6,7 +6,7 @@ Related screen types: inventory, collection, shop, crafting
 ## Rule: Grid Column Count by Device
 
 **Condition**: IF displaying an item grid (inventory, collection, mount list)
-**Decision**: THEN use 5-6 columns on phones (landscape ~540-640pt width) and 8-10 columns on tablets. Split-panel layouts (list+detail) use 2-3 columns in the constrained side.
+**Decision**: THEN (all measurements assume landscape orientation, as MMORPGs are landscape-locked — see safe-zones.md "Landscape-Only Orientation Lock") use 5-6 columns on phones (landscape viewport ~720-900pt) and 8-10 columns on tablets (landscape viewport ~1100-1400pt). Split-panel layouts (list+detail) use 2-3 columns in the constrained side.
 **Rationale**: NC nc-inventory-001 마운트 그리드 우측 패널에 2열. 풀스크린 인벤토리는 5-6열이 표준. 아이콘 가독성과 용량 표시 균형.
 **Confidence**: observed-convention
 **Screen types**: inventory, collection, shop
@@ -18,6 +18,7 @@ Related screen types: inventory, collection, shop, crafting
 **Decision**: THEN enforce minimum 44×44pt (132×132px @3x). For item grids with detailed icons (rarity borders, stack counts, lock badges), target 52-60pt per slot.
 **Rationale**: Apple HIG 44pt 최소 기준. 한국 MMORPG 아이템은 등급 테두리, 강화 수치, 수량 뱃지, 잠금 아이콘 등 밀도 높은 시각 정보 포함.
 **Confidence**: platform-guideline + observed-convention
+
 **Screen types**: inventory, collection, shop, crafting
 **Sources**: Apple HIG Layout, LW lw-collection-001, NC nc-collection-001
 

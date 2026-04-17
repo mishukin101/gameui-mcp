@@ -12,15 +12,6 @@ Related screen types: shop, gacha, hud, inventory
 **Screen types**: shop, gacha
 **Sources**: nc-shop-002, NC profile split_left_right (25/58), RV profile vertical_sidebar (20/71)
 
-## Rule: Premium vs Free Currency Icons
-
-**Condition**: IF game has both free and premium currencies
-**Decision**: THEN represent premium currency as faceted gem/diamond icon, free currency as gold coin icon. Always display both in persistent top-bar.
-**Rationale**: 4개 게임 모두 동일 관습. NC 다이아(프리미엄) vs 골드(무료), LW 다이아 vs 아데나 코인. 상단 바 배치 LW(28/37), NC(15/58).
-**Confidence**: observed-convention
-**Screen types**: hud, shop, gacha, inventory
-**Sources**: NC currency_types, LW currency_types, RV currency_types
-
 ## Rule: Real Currency on Purchase Button
 
 **Condition**: IF shop item costs real money (not in-game currency)

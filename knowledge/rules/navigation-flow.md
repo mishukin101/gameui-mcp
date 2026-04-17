@@ -17,7 +17,7 @@ Related screen types: hud, inventory, forge, shop, gacha, skill_tree, character,
 **Condition**: IF mobile MMORPG menu hierarchy
 **Decision**: THEN HUD → menu grid → system → sub-tab/action = maximum 3-4 taps to any feature. Shop purchases should complete in max 2 taps after reaching the shop.
 **Rationale**: 탭 수가 늘수록 이탈률 증가. 자주 쓰는 기능은 3탭 이내.
-**Confidence**: observed-convention + academic-evidence
+**Confidence**: academic-evidence + observed-convention
 **Screen types**: hud, shop
 **Sources**: shop.md ("max 2 taps to purchase completion"), NNGroup mobile navigation
 

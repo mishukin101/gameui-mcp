@@ -30,10 +30,19 @@ Related screen types: hud, inventory, collection, settings, all
 **Screen types**: hud, inventory, settings, shop
 **Sources**: Apple HIG, Night Crows / Raven 2 버튼 마진 관찰
 
+## Rule: On-Screen Keyboard Intrusion
+
+**Condition**: IF UI contains text input fields (chat, search, name entry, trade amount)
+**Decision**: THEN on keyboard show, scroll or resize content so the active field remains visible above the keyboard. Never allow the keyboard to cover the field being edited. Preserve the OK/confirm button accessibility.
+**Rationale**: IME가 올라오면 화면의 40-50% 차지. 입력 필드가 가려지면 사용자가 뭘 타이핑하는지 모름.
+**Confidence**: platform-guideline
+**Screen types**: chat, shop, trade, character, settings
+**Sources**: Apple HIG Keyboards, Android Keyboard Handling
+
 ## Rule: Foldable and Ultra-Wide Letterboxing
 
 **Condition**: IF device aspect ratio exceeds 21:9 (foldable inner screen, ultra-wide)
-**Decision**: THEN clamp gameplay viewport to 21:9 maximum and letterbox with themed borders. Allow HUD elements to extend into extra margin if desired.
+**Decision**: THEN clamp gameplay viewport to 21:9 maximum and letterbox the remaining margin with solid dark background or game-themed artwork (not transparent/black bars). Allow HUD elements (chat, minimap) to extend into the letterbox area if their design explicitly accommodates it.
 **Rationale**: 3D 뷰포트가 극단적 비율에서 왜곡. 한국 MMORPG 중 폴더블 내부 화면 최적화 사례 없음.
 **Confidence**: observed-convention
 **Screen types**: hud
